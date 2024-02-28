@@ -32,7 +32,7 @@ class MyMacroWidget extends StatelessWidget {
                 FaIcon(icon, color: Colors.redAccent),
                 const SizedBox(height: 4),
                 Text(
-                  '$value $title',
+                  title == "Calories" ? '$value $title' : '${value}g $title',
                   style: const TextStyle(fontSize: 10),
                 )
               ]),

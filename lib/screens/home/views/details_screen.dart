@@ -103,13 +103,33 @@ class DetailsScreen extends StatelessWidget {
                           MyMacroWidget(
                               value: 21,
                               title: 'Fat',
-                              icon: FontAwesomeIcons.oilWell),
+                              icon: FontAwesomeIcons.droplet),
                           SizedBox(width: 10),
                           MyMacroWidget(
                               value: 38,
                               title: 'Carbs',
                               icon: FontAwesomeIcons.breadSlice),
                         ],
+                      ),
+                      const SizedBox(height: 40),
+                      SizedBox(
+                        width: MediaQuery.of(context).size.width,
+                        height: 50,
+                        child: TextButton(
+                            onPressed: () {},
+                            style: TextButton.styleFrom(
+                                elevation: 3.0,
+                                backgroundColor: Colors.black,
+                                foregroundColor: Colors.white,
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(10))),
+                            child: const Text(
+                              "Buy Now",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w500),
+                            )),
                       )
                     ]),
                   ))
