@@ -2,13 +2,13 @@ import '../entities/macros_entity.dart';
 
 class Macros {
   int calories;
-  int protein;
+  int proteins;
   int fat;
   int carbs;
 
   Macros({
     required this.calories,
-    required this.protein,
+    required this.proteins,
     required this.fat,
     required this.carbs,
   });
@@ -16,7 +16,7 @@ class Macros {
   MacrosEntity toEntity() {
     return MacrosEntity(
       calories: calories,
-      protein: protein,
+      proteins: proteins,
       fat: fat,
       carbs: carbs,
     );
@@ -24,10 +24,9 @@ class Macros {
 
   static Macros fromEntity(MacrosEntity entity) {
     return Macros(
-      calories: entity.calories,
-      protein: entity.protein,
-      fat: entity.fat,
-      carbs: entity.carbs,
-    );
+        calories: entity.calories,
+        proteins: entity.proteins,
+        fat: entity.fat,
+        carbs: entity.carbs);
   }
 }
